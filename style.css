@@ -112,13 +112,22 @@ img {
 	flex-wrap: wrap;
 }
 
-
+.sobre-info {
+	flex: 2 1 300px;
+	margin: 0 10px;
+}
 
 .sobre-info h1 {
 	font-size: 3em;
 	margin-bottom: .5em;
 }
 
+.sobre-info p {
+	font-size: 1.25em;
+	line-height: 1.4;
+	margin-bottom: 1em;
+	color: #7c7c7c;
+}
 
 .sobre-img {
 	flex: 1 1 160px;
@@ -132,6 +141,16 @@ img {
 	margin: 60px auto;
 }
 
+.produtos h1 {
+	font-size: 3em;
+	margin: 0 10px 60px 10px
+}
+
+.produtos-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
 
 .produtos-item {
 	flex: 1 1 175px;
@@ -153,7 +172,9 @@ img {
 	border-top: 8px solid #f9265e;
 }
 
-
+.blue {
+	border-top: 8px solid #66d9eb;
+}
 
 /*Preco*/
 
@@ -165,7 +186,12 @@ img {
 	align-items: flex-end;
 }
 
-
+.preco-item {
+	flex: 1 1 260px;
+	border: 4px solid white;
+	padding: 20px;
+	margin: 10px;
+}
 
 .preco-item h2 {
 	font-size: 3em;
@@ -188,5 +214,29 @@ img {
 
 .preco-item sup {
 	font-size: 1.5rem;
+}
+
+.preco-item ul {
+	max-width: 300px;
+	margin: 20px auto;
+	font-size: 1.25em;
+	font-style: italic;
+	color: #7c7c7c;
+}
+
+.preco-item li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.preco-item li::after {
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	background: #2c70ff;
+	border-radius: 50%;
 }
 
